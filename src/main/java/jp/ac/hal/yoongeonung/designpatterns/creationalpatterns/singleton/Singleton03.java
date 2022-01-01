@@ -1,5 +1,9 @@
 package jp.ac.hal.yoongeonung.designpatterns.creationalpatterns.singleton;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Singleton03 {
     /**
      * Synchronized(동기화)를 사용
