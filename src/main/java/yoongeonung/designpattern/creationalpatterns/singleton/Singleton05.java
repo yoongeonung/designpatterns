@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Singleton05 {
     /**
-     * static inner 클래스 사용
+     * static inner 클래스 사용(추천방법 중 하나)
      *
      * 장점 :
      * 멀티쓰레드 환경에서 안전

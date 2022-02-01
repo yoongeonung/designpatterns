@@ -14,6 +14,10 @@ public class Singleton04 {
      * 성능상 나쁘지 않다.
      * instance를 필요로하는 그 시점에 생성할수 있다.(lazy loading)
      *
+     * 메서드 자체에 synchronized가 붙었을때는 매번 synchronized, 즉 동기화가 진행되어야하지만
+     * double checked locking의 경우 어쩌다 필요한 동시에 진입되었을때 거기에 인스턴스가 없었을때에만
+     * synchronized구문에 접근하기 때문에 성능상 훨씬 유리하다.
+     *
      *
      * 단점 :
      * 자바 1.5이상 부터 volatile을 이용하여
